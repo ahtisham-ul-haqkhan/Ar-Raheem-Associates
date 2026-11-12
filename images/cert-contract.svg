@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stampHeaderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C2D12"/>
+      <stop offset="50%" stop-color="#C2410C"/>
+      <stop offset="100%" stop-color="#7C2D12"/>
+    </linearGradient>
+    <linearGradient id="goldKcci" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#9A7B1C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1130" fill="#FFFDF8"/>
+  <rect x="25" y="25" width="750" height="1080" fill="none" stroke="#7C2D12" stroke-width="3"/>
+  <rect x="35" y="35" width="730" height="1060" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+
+  <!-- Judicial Stamp Paper Graphic Header -->
+  <g transform="translate(40, 45)">
+    <rect width="720" height="170" fill="#FEF3C7" stroke="#D97706" rx="4"/>
+    <text x="360" y="40" text-anchor="middle" font-family="'Times New Roman', serif" font-size="22" font-weight="bold" fill="#7C2D12" letter-spacing="3">GOVERNMENT OF SINDH, PAKISTAN</text>
+    <text x="360" y="65" text-anchor="middle" font-family="'Times New Roman', serif" font-size="14" font-weight="bold" fill="#B45309" letter-spacing="1">OFFICIAL NON-JUDICIAL STAMP PAPER (RS. 1000/-)</text>
+    <circle cx="360" cy="110" r="30" fill="none" stroke="#7C2D12" stroke-width="2"/>
+    <text x="360" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7C2D12">STAMP DUTY PAID</text>
+  </g>
+
+  <!-- Title -->
+  <g text-anchor="middle" font-family="'Times New Roman', serif" transform="translate(400, 260)">
+    <text x="0" y="0" font-size="24" font-weight="bold" fill="#0B1F3A" letter-spacing="1">COMMERCIAL CONSTRUCTION AGREEMENT</text>
+    <text x="0" y="25" font-size="13" font-style="italic" fill="#555555">[Turnkey Engineering, Procurement &amp; Construction (EPC) Contract]</text>
+    <line x1="-200" y1="40" x2="200" y2="40" stroke="#C9A227" stroke-width="2"/>
+  </g>
+
+  <!-- Contract Summary -->
+  <g font-family="Arial, sans-serif" transform="translate(80, 340)">
+    <rect width="640" height="480" fill="#FFFFFF" stroke="#E2E8F0" rx="6"/>
+    
+    <g font-size="14">
+      <rect x="0" y="0" width="640" height="40" fill="#F8FAFC" rx="6 6 0 0"/>
+      <text x="25" y="26" font-weight="bold" fill="#0B1F3A">CONTRACT REFERENCE:</text>
+      <text x="260" y="26" font-family="monospace" font-weight="bold" fill="#C2410C">EPC-KHI-2025-COMM-004</text>
+
+      <line x1="0" y1="40" x2="640" y2="40" stroke="#E2E8F0"/>
+      <text x="25" y="70" font-weight="bold" fill="#0B1F3A">FIRST PARTY (CONTRACTOR):</text>
+      <text x="260" y="70" font-weight="bold" fill="#0B1F3A">AR BUILDER &amp; DEVELOPER</text>
+      <text x="260" y="90" font-size="12" fill="#64748B">PEC Lic. # CIVIL/28491, NTN: 7392018-4</text>
+
+      <line x1="0" y1="105" x2="640" y2="105" stroke="#E2E8F0"/>
+      <text x="25" y="135" font-weight="bold" fill="#0B1F3A">SECOND PARTY (CLIENT):</text>
+      <text x="260" y="135" font-weight="bold" fill="#1F2937">Ahtisham Enterprise (Commercial Client)</text>
+
+      <line x1="0" y1="155" x2="640" y2="155" stroke="#E2E8F0"/>
+      <text x="25" y="185" font-weight="bold" fill="#0B1F3A">PROJECT TITLE &amp; SITE:</text>
+      <text x="260" y="185" fill="#1F2937">Corporate Tower (Basement + G + 8 Floors)</text>
+      <text x="260" y="205" font-size="12" fill="#64748B">Plot 18-C, Main Shahrah-e-Faisal, Karachi</text>
+
+      <line x1="0" y1="220" x2="640" y2="220" stroke="#E2E8F0"/>
+      <text x="25" y="250" font-weight="bold" fill="#0B1F3A">SCOPE OF WORK:</text>
+      <text x="260" y="250" fill="#1F2937">Complete RCC Grey Structure, MEP &amp; Turnkey Finishing</text>
+
+      <line x1="0" y1="270" x2="640" y2="270" stroke="#E2E8F0"/>
+      <text x="25" y="300" font-weight="bold" fill="#0B1F3A">COVERED AREA:</text>
+      <text x="260" y="300" fill="#1F2937">48,500 Square Feet (approx.)</text>
+
+      <line x1="0" y1="320" x2="640" y2="320" stroke="#E2E8F0"/>
+      <text x="25" y="350" font-weight="bold" fill="#0B1F3A">COMPLETION TIMELINE:</text>
+      <text x="260" y="350" font-weight="bold" fill="#15803D">18 Calendar Months (Delivered Ahead of Schedule)</text>
+
+      <line x1="0" y1="370" x2="640" y2="370" stroke="#E2E8F0"/>
+      <text x="25" y="400" font-weight="bold" fill="#0B1F3A">DEFECT LIABILITY PERIOD:</text>
+      <text x="260" y="400" fill="#1F2937">12 Months Post Handover Warranty Included</text>
+
+      <line x1="0" y1="420" x2="640" y2="420" stroke="#E2E8F0"/>
+      <text x="25" y="450" font-weight="bold" fill="#0B1F3A">LEGAL REGISTRATION:</text>
+      <text x="260" y="450" font-weight="bold" fill="#0B1F3A">Sub-Registrar Office, District East, Karachi</text>
+    </g>
+  </g>
+
+  <!-- Notary and Stamp Seals -->
+  <g transform="translate(190, 930)">
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#7C2D12" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#7C2D12" stroke-width="1" stroke-dasharray="4,2"/>
+    <text x="0" y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#7C2D12">NOTARY PUBLIC</text>
+    <text x="0" y="7" text-anchor="middle" font-family="'Times New Roman', serif" font-size="12" font-weight="bold" fill="#7C2D12">EXECUTED</text>
+    <text x="0" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#7C2D12">KARACHI - SINDH</text>
+  </g>
+
+  <!-- Parties Signatures -->
+  <g transform="translate(430, 910)" font-family="Arial, sans-serif">
+    <path d="M0,0 Q30,-20 60,0 T120,-10" fill="none" stroke="#0B1F3A" stroke-width="2"/>
+    <line x1="0" y1="15" x2="130" y2="15" stroke="#333" stroke-width="1"/>
+    <text x="65" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#0B1F3A">First Party (CEO)</text>
+    <text x="65" y="46" text-anchor="middle" font-size="9" fill="#666">AR Builder &amp; Developer</text>
+  </g>
+
+  <g transform="translate(600, 910)" font-family="Arial, sans-serif">
+    <path d="M0,-5 Q25,-25 50,-5 T100,-15" fill="none" stroke="#0F5132" stroke-width="2"/>
+    <line x1="0" y1="15" x2="110" y2="15" stroke="#333" stroke-width="1"/>
+    <text x="55" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#0F5132">Second Party</text>
+    <text x="55" y="46" text-anchor="middle" font-size="9" fill="#666">Corporate Client</text>
+  </g>
+
+  <!-- Bottom Verification Footer -->
+  <g transform="translate(80, 1045)" font-family="monospace" font-size="10" fill="#64748B">
+    <text x="0" y="0">LEGALLY ENFORCEABLE &amp; VERIFIED CONTRACT DEED &#8226; REG BOOK NO. IV / VOL 892 / PAGE 45</text>
+  </g>
+</svg>
+

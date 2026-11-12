@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pecGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F3A"/>
+      <stop offset="100%" stop-color="#162E4E"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A7B1C"/>
+      <stop offset="50%" stop-color="#E5C768"/>
+      <stop offset="100%" stop-color="#9A7B1C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1130" fill="#FFFFFF"/>
+  <rect x="25" y="25" width="750" height="1080" fill="none" stroke="#0B1F3A" stroke-width="4"/>
+  <rect x="35" y="35" width="730" height="1060" fill="none" stroke="#C9A227" stroke-width="2"/>
+
+  <!-- PEC Emblem and Header -->
+  <g text-anchor="middle" font-family="'Times New Roman', serif">
+    <!-- Gear and Bridge Engineering Emblem -->
+    <circle cx="400" cy="110" r="45" fill="#0B1F3A"/>
+    <circle cx="400" cy="110" r="40" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <text x="400" y="117" font-size="20" font-weight="bold" fill="#C9A227" font-family="Arial, sans-serif">PEC</text>
+
+    <text x="400" y="185" font-size="20" font-weight="bold" fill="#0B1F3A" letter-spacing="2">PAKISTAN ENGINEERING COUNCIL</text>
+    <text x="400" y="205" font-size="12" fill="#555555" letter-spacing="1">CONSTITUTED UNDER PEC ACT 1976 (ACT V OF 1976)</text>
+    <text x="400" y="225" font-size="11" fill="#777777">HEADQUARTERS ATATURK AVENUE (EAST), G-5/2, ISLAMABAD</text>
+
+    <line x1="180" y1="240" x2="620" y2="240" stroke="url(#goldRibbon)" stroke-width="3"/>
+
+    <text x="400" y="285" font-size="26" font-weight="bold" fill="#0B1F3A" letter-spacing="1">CONSTRUCTOR'S LICENCE</text>
+    <text x="400" y="310" font-size="13" font-style="italic" fill="#555555">[Under PEC Bye-Laws 1986 For Civil Construction Works]</text>
+  </g>
+
+  <!-- Licence Number Banner -->
+  <g font-family="Arial, sans-serif" transform="translate(80, 335)">
+    <rect width="640" height="60" fill="#F8FAFC" stroke="#CBD5E1" rx="6"/>
+    <text x="25" y="37" font-size="15" font-weight="bold" fill="#0B1F3A">PEC Registration Licence No:</text>
+    <text x="320" y="38" font-size="22" font-weight="bold" fill="#C9A227">CIVIL/28491 (C-4)</text>
+  </g>
+
+  <!-- Licence Specifications -->
+  <g font-family="Arial, sans-serif" transform="translate(80, 420)">
+    <rect width="640" height="400" fill="#FFFFFF" stroke="#E2E8F0" rx="6"/>
+    
+    <g font-size="14">
+      <rect x="0" y="0" width="640" height="45" fill="#F1F5F9" rx="6 6 0 0"/>
+      <text x="25" y="28" font-weight="bold" fill="#0B1F3A">Licensed Entity:</text>
+      <text x="250" y="28" font-weight="bold" fill="#0B1F3A">AR BUILDER &amp; DEVELOPER</text>
+
+      <line x1="0" y1="45" x2="640" y2="45" stroke="#E2E8F0"/>
+      <text x="25" y="78" font-weight="bold" fill="#0B1F3A">Chief Executive / Engineer:</text>
+      <text x="250" y="78" fill="#1F2937">Engr. [OWNER NAME] (PEC Reg: CIVIL/19482)</text>
+
+      <line x1="0" y1="95" x2="640" y2="95" stroke="#E2E8F0"/>
+      <text x="25" y="128" font-weight="bold" fill="#0B1F3A">Category Awarded:</text>
+      <text x="250" y="128" font-weight="bold" fill="#C9A227">Category C-4 (Works Limit: Up to PKR 200 Million)</text>
+
+      <line x1="0" y1="145" x2="640" y2="145" stroke="#E2E8F0"/>
+      <text x="25" y="178" font-weight="bold" fill="#0B1F3A">Codes of Specialization:</text>
+      <text x="250" y="178" fill="#1F2937">CE01 (Roads), CE09 (Buildings), CE10 (Structural), BC01</text>
+
+      <line x1="0" y1="195" x2="640" y2="195" stroke="#E2E8F0"/>
+      <text x="25" y="228" font-weight="bold" fill="#0B1F3A">Validity Period:</text>
+      <text x="250" y="228" font-weight="bold" fill="#15803D">01 July 2024 to 30 June 2027 (Fully Valid &amp; Active)</text>
+
+      <line x1="0" y1="245" x2="640" y2="245" stroke="#E2E8F0"/>
+      <text x="25" y="278" font-weight="bold" fill="#0B1F3A">Registered Branch:</text>
+      <text x="250" y="278" fill="#1F2937">Karachi Branch Office, Sindh, Pakistan</text>
+
+      <line x1="0" y1="295" x2="640" y2="295" stroke="#E2E8F0"/>
+      <text x="25" y="328" font-weight="bold" fill="#0B1F3A">Supervisory Engineers:</text>
+      <text x="250" y="328" fill="#1F2937">Professional Engineers (Civil, Structural &amp; MEP)</text>
+
+      <line x1="0" y1="345" x2="640" y2="345" stroke="#E2E8F0"/>
+      <text x="25" y="375" font-weight="bold" fill="#0B1F3A">Compliance Verification:</text>
+      <text x="250" y="375" fill="#15803D">&#x2714; Certified by PEC Enrolment Committee</text>
+    </g>
+  </g>
+
+  <!-- Embossed Gold Seal -->
+  <g transform="translate(190, 910)">
+    <circle cx="0" cy="0" r="52" fill="url(#goldRibbon)" stroke="#8E6F14" stroke-width="2"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <text x="0" y="-16" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#0B1F3A">PAKISTAN ENGINEERING COUNCIL</text>
+    <text x="0" y="5" text-anchor="middle" font-family="'Times New Roman', serif" font-size="14" font-weight="bold" fill="#0B1F3A">LICENSED</text>
+    <text x="0" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0B1F3A">CONSTRUCTOR C-4</text>
+  </g>
+
+  <!-- Registrar Sign -->
+  <g transform="translate(540, 910)" text-anchor="middle" font-family="Arial, sans-serif">
+    <path d="M-60,-5 Q-20,-25 20,-5 T70,-10" fill="none" stroke="#0B1F3A" stroke-width="2"/>
+    <line x1="-80" y1="15" x2="80" y2="15" stroke="#333333" stroke-width="1"/>
+    <text x="0" y="32" font-size="12" font-weight="bold" fill="#0B1F3A">Registrar / Vice Chairman</text>
+    <text x="0" y="48" font-size="10" fill="#666666">Pakistan Engineering Council (PEC)</text>
+  </g>
+
+  <!-- Security Footer -->
+  <g transform="translate(80, 1030)" font-family="monospace" font-size="10" fill="#64748B">
+    <text x="0" y="15">OFFICIAL SECURITY SEALED DOCUMENT &#8226; PEC LICENCE ID: PK-ENG-28491-C4-KHI</text>
+    <text x="0" y="32">Online verification portal: https://www.pec.org.pk/online_verification</text>
+  </g>
+</svg>
+
