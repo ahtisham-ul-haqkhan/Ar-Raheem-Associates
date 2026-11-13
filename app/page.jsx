@@ -2075,12 +2075,12 @@ export default function Home() {
                   <div>
                     <h4 className="contact-detail-title">Direct Phone / WhatsApp</h4>
                     <p className="contact-detail-value mb-0">
-                      <a href="tel:+923418186681" className="d-block text-navy fw-bold text-decoration-none">+92 341 8186681 (03418186681)</a>
+                      <a href="tel:+923418186681" className="d-block text-navy fw-bold text-decoration-none">+92 341 8186681</a>
                       <a href="https://wa.me/923418186681?text=Hello%20Zohaib%20Khan%2C%20I%20would%20like%20to%20inquire%20about%20a%20property%20or%20construction%20project." target="_blank" rel="noopener noreferrer" className="badge bg-success text-white text-decoration-none mt-1">
                         <i className="bi bi-whatsapp me-1"></i>Chat on WhatsApp
                       </a>
                     </p>
-                    <small className="text-muted d-block mt-1">Office / Alt: +92 333 2179918</small>
+                    {/* <small className="text-muted d-block mt-1">Office / Alt: +92 333 2179918</small> */}
                   </div>
                 </div>
 
