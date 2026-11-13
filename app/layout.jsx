@@ -48,6 +48,9 @@ export const metadata = {
   alternates: {
     canonical: 'https://arraheemassociates.vercel.app',
   },
+  verification: {
+    google: 'google459ddefc778d8809',
+  },
   openGraph: {
     title: 'AL-RAHEEM ASSOCIATES | Building Trust Since 2016',
     description:

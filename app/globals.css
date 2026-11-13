@@ -1030,6 +1030,86 @@ img {
   transform: translateX(4px);
 }
 
+/* Services Track & Responsive Grid */
+.services-track {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.services-track-item {
+  flex: 0 0 auto;
+  width: 33.333333%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .services-track-item {
+    width: 50%;
+  }
+}
+
+/* Mobile Services: Smooth horizontal swipeable carousel */
+@media (max-width: 767.98px) {
+  .services-track {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: -12px;
+    margin-left: -12px;
+    scrollbar-width: thin;
+  }
+
+  .services-track::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .services-track::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 4px;
+  }
+
+  .services-track-item {
+    flex: 0 0 82%;
+    max-width: 310px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    margin-bottom: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .services-track-item .service-card {
+    padding: 24px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .services-track-item .service-icon-box {
+    width: 52px;
+    height: 52px;
+    font-size: 1.45rem;
+    margin-bottom: 14px;
+  }
+
+  .services-track-item .service-card-title {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .services-track-item .service-card-text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 14px;
+  }
+}
+
 /* ==========================================================================
    10. PROJECTS PORTFOLIO SECTION
    ========================================================================== */

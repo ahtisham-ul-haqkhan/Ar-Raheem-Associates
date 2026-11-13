@@ -35,6 +35,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="section-padding section-bg-light" aria-label="Our Real Estate, Construction and Skilled Labor Services">
       <div className="container">
+        {/* Section Header */}
         <div className="section-header text-center" data-aos="fade-up">
           <span className="section-subtitle">WHAT WE DELIVER</span>
           <h2 className="section-title">Comprehensive Construction &amp; Real Estate Services</h2>
@@ -43,18 +44,34 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="row g-4">
+        {/* Mobile Swipe Hint Bar */}
+        <div className="d-flex d-md-none justify-content-between align-items-center mb-3 px-1 text-muted small">
+          <span className="d-flex align-items-center gap-1">
+            <i className="bi bi-arrow-left-right text-gold"></i>
+            <span>Swipe left/right to view services</span>
+          </span>
+          <span className="badge bg-gold-subtle text-gold border border-gold-subtle fw-semibold px-2 py-1">
+            6 Services
+          </span>
+        </div>
+
+        {/* Services Track: Desktop Grid (3x2) & Mobile Swipe Slider */}
+        <div className="services-track">
           {services.map((service, index) => (
-            <div className="col-md-6 col-lg-4" key={index} data-aos="fade-up" data-aos-delay={100 + index * 50}>
-              <div className="service-card">
-                <div className="service-icon-box">
-                  <i className={`bi ${service.icon}`}></i>
+            <div className="services-track-item" key={index} data-aos="fade-up" data-aos-delay={100 + index * 50}>
+              <div className="service-card h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div className="service-icon-box">
+                    <i className={`bi ${service.icon}`}></i>
+                  </div>
+                  <h3 className="service-card-title">{service.title}</h3>
+                  <p className="service-card-text">{service.text}</p>
                 </div>
-                <h3 className="service-card-title">{service.title}</h3>
-                <p className="service-card-text">{service.text}</p>
-                <a href="#contact" className="service-card-link">
-                  Inquire Service <i className="bi bi-arrow-right"></i>
-                </a>
+                <div className="pt-2">
+                  <a href="#contact" className="service-card-link">
+                    Inquire Service <i className="bi bi-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           ))}
@@ -63,4 +80,3 @@ export default function ServicesSection() {
     </section>
   );
 }
-
