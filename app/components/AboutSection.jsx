@@ -32,8 +32,11 @@ export default function AboutSection() {
             <p className="text-muted mb-3" style={{ fontSize: '1.02rem', lineHeight: '1.7' }}>
               In addition to real estate, we offer full-scope construction services, mobilizing a seasoned workforce of experienced masons, carpenters, certified electricians, and plumbers to ensure high-quality workmanship for residential and commercial construction needs. With a commitment to excellence and customer satisfaction, we strive to deliver reliable and professional turnkey civil solutions.
             </p>
-            <p className="text-muted mb-4" style={{ fontSize: '1.02rem', lineHeight: '1.7' }}>
+            <p className="text-muted mb-3" style={{ fontSize: '1.02rem', lineHeight: '1.7' }}>
               We also offer lucrative investment opportunities in real estate, booking of apartments &amp; retail shops, resale of flats, shops &amp; corporate offices, leasing of godowns/warehouses, and accurate property assessments. Headquartered at <strong>Azan Centre, Keamari, Karachi</strong>, our enterprise maintains a steady monthly income and verified corporate standing, certified by the <strong>Karachi Chamber of Commerce &amp; Industry (KCCI #150586)</strong>, <strong>FBR (NTN #5357401-7)</strong>, and <strong>Pakistan Businessmen Association (BP-2670)</strong>.
+            </p>
+            <p className="text-muted mb-4" style={{ fontSize: '1.02rem', lineHeight: '1.7' }}>
+              Bringing global perspective to Karachi's construction and property sector, our leadership possesses extensive international business and market travel exposure across <strong>7 key global destinations</strong>: the <strong>United Kingdom</strong>, <strong>Singapore</strong>, <strong>Saudi Arabia</strong>, <strong>Turkey</strong>, <strong>Malaysia</strong>, <strong>Thailand</strong>, and <strong>Indonesia</strong>.
             </p>
 
             {/* Vision and Mission Cards */}
@@ -65,13 +68,63 @@ export default function AboutSection() {
           </div>
         </div>
 
+        {/* Global Business Exposure & Visited Countries */}
+        <div className="global-exposure-banner mt-5 mb-5 p-4 p-md-5 rounded-4 bg-navy text-white shadow position-relative overflow-hidden" data-aos="fade-up">
+          <div className="position-absolute end-0 top-0 opacity-10 p-4 d-none d-md-block" style={{ pointerEvents: 'none' }}>
+            <i className="bi bi-airplane-engines display-1 text-gold"></i>
+          </div>
+          <div className="row align-items-center g-4 position-relative" style={{ zIndex: 2 }}>
+            <div className="col-lg-4">
+              <div className="d-flex align-items-center gap-3">
+                <div className="bg-gold text-navy rounded-circle d-flex align-items-center justify-content-center shadow" style={{ width: '56px', height: '56px', flexShrink: 0 }}>
+                  <i className="bi bi-globe2 fs-3"></i>
+                </div>
+                <div>
+                  <span className="badge bg-gold text-navy fw-bold text-uppercase px-2 py-1 mb-1" style={{ fontSize: '0.7rem' }}>
+                    <i className="bi bi-airplane-fill me-1"></i> Global Exposure
+                  </span>
+                  <h4 className="h5 fw-bold text-white mb-0">International Business Visits</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-8">
+              <p className="text-white-50 small mb-3" style={{ lineHeight: '1.6' }}>
+                Founder <strong className="text-white">Zohaib Khan</strong> has undertaken business and market visits across major international commercial hubs, bringing global construction benchmarks, structural standards, and trade best practices to Pakistan:
+              </p>
+              <div className="d-flex flex-wrap gap-2">
+                {[
+                  'United Kingdom',
+                  'Singapore',
+                  'Saudi Arabia',
+                  'Turkey',
+                  'Malaysia',
+                  'Thailand',
+                  'Indonesia',
+                ].map((country, idx) => (
+                  <span
+                    key={idx}
+                    className="badge bg-white bg-opacity-10 text-white border border-light border-opacity-25 px-3 py-2 fw-semibold d-inline-flex align-items-center gap-2 shadow-xs"
+                    style={{ fontSize: '0.85rem' }}
+                  >
+                    <i className="bi bi-geo-alt-fill text-gold"></i>
+                    <span>{country}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Executive Business Profile & Visiting Card Showcase */}
-        <div className="business-profile-showcase mt-5 pt-4 border-top" data-aos="fade-up">
+        <div className="business-profile-showcase pt-4 border-top" data-aos="fade-up">
           <div className="row g-4 align-items-center">
             {/* Left: Core Business Capabilities */}
             <div className="col-lg-6">
-              <span className="badge bg-gold-dark text-white px-3 py-2 rounded-pill text-uppercase mb-2 border border-gold">
-                <i className="bi bi-patch-check-fill text-gold me-1"></i> Established 2016 &bull; Verified Operations
+              <span className="badge bg-navy text-gold px-3 py-2 rounded-pill text-uppercase mb-3 border border-gold fw-semibold d-inline-flex align-items-center gap-1 shadow-sm">
+                <i className="bi bi-patch-check-fill text-gold me-1"></i>
+                <span className="text-white">Established 2016</span>
+                <span className="text-gold-light opacity-50 mx-1">&bull;</span>
+                <span className="text-gold">Verified Operations</span>
               </span>
               <h3 className="h4 fw-bold text-navy mb-3">Our Core Business Capabilities</h3>
               <div className="d-flex flex-column gap-3">

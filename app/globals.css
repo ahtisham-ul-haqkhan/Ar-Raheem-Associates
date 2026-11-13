@@ -139,6 +139,7 @@ img {
 .bg-navy-dark { background-color: var(--primary-navy-dark) !important; }
 .bg-navy-light { background-color: var(--primary-navy-light) !important; }
 .bg-gold { background-color: var(--accent-gold) !important; }
+.bg-gold-dark { background-color: var(--accent-gold-dark) !important; color: #ffffff !important; }
 .bg-gold-subtle { background-color: var(--accent-gold-subtle) !important; }
 .border-gold { border-color: var(--accent-gold) !important; }
 .tracking-tight { letter-spacing: -0.02em; }
