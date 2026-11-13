@@ -127,6 +127,49 @@ export default function Home() {
         projectModal.querySelector('#modalProjectDesc').textContent     = get('data-proj-desc') || '';
         const img = projectModal.querySelector('#modalProjectImage');
         if (img && get('data-proj-image')) { img.src = get('data-proj-image'); img.alt = get('data-proj-title'); }
+        
+        // Populate Gallery Strip
+        const galleryWrap = projectModal.querySelector('#modalProjectGalleryWrap');
+        const galleryContainer = projectModal.querySelector('#modalProjectGallery');
+        const galleryCount = projectModal.querySelector('#modalGalleryCount');
+        const galleryRaw = get('data-proj-gallery');
+
+        if (galleryContainer) {
+          galleryContainer.innerHTML = '';
+          if (galleryRaw) {
+            const images = galleryRaw.split('|').map(s => s.trim()).filter(Boolean);
+            if (images.length > 1) {
+              galleryWrap?.classList.remove('d-none');
+              if (galleryCount) galleryCount.textContent = images.length;
+              images.forEach((imgUrl, idx) => {
+                const thumb = document.createElement('img');
+                thumb.src = imgUrl;
+                thumb.alt = `Site Photo ${idx + 1}`;
+                thumb.className = `rounded border ${idx === 0 ? 'border-warning border-3' : 'border-secondary-subtle'}`;
+                thumb.style.width = '75px';
+                thumb.style.height = '52px';
+                thumb.style.objectFit = 'cover';
+                thumb.style.cursor = 'pointer';
+                thumb.style.flexShrink = '0';
+                thumb.addEventListener('click', () => {
+                  if (img) img.src = imgUrl;
+                  galleryContainer.querySelectorAll('img').forEach(el => {
+                    el.classList.remove('border-warning', 'border-3');
+                    el.classList.add('border-secondary-subtle');
+                  });
+                  thumb.classList.remove('border-secondary-subtle');
+                  thumb.classList.add('border-warning', 'border-3');
+                });
+                galleryContainer.appendChild(thumb);
+              });
+            } else {
+              galleryWrap?.classList.add('d-none');
+            }
+          } else {
+            galleryWrap?.classList.add('d-none');
+          }
+        }
+
         const list = projectModal.querySelector('#modalProjectFeatures');
         list.innerHTML = '';
         get('data-proj-features').split('|').forEach((feat) => {
