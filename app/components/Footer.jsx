@@ -79,15 +79,51 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Copyright Row */}
+      {/* Bottom Copyright & Developer Credit Row */}
       <div className="footer-bottom">
         <div className="container">
-          <div className="row align-items-center gy-2">
-            <div className="col-md-6 text-center text-md-start">
-              <span>Statutory Firm: <strong>M/s Al-Raheem Associates</strong> &bull; KCCI Reg #150586 &bull; FBR NTN #5357401-7 (ATL) &bull; PBA #BP-2670</span>
+          <div className="row align-items-center gy-3">
+            {/* Left: Company & Statutory Legal Registration */}
+            <div className="col-lg-6 text-center text-lg-start">
+              <div className="text-white-50 small mb-1">
+                Statutory Firm: <strong>M/s Al-Raheem Associates</strong> &bull; KCCI Reg #150586 &bull; FBR NTN #5357401-7 (ATL) &bull; PBA #BP-2670
+              </div>
+              <div className="text-white-50 small">
+                &copy; <span id="currentYear">2026</span> AL-RAHEEM ASSOCIATES. All Rights Reserved. Founder &amp; Owner: Zohaib Khan.
+              </div>
             </div>
-            <div className="col-md-6 text-center text-md-end">
-              <span>&copy; <span id="currentYear">2026</span> AL-RAHEEM ASSOCIATES (M/s Al-Raheem Associates). All Rights Reserved. Founder &amp; Owner: Zohaib Khan.</span>
+
+            {/* Right: Developer Credit with Portfolio & Direct Contact */}
+            <div className="col-lg-6 text-center text-lg-end">
+              <div className="d-inline-flex flex-wrap align-items-center justify-content-center justify-content-lg-end gap-2 text-white-50 small">
+                <span>Designed &amp; Developed by</span>
+                <a
+                  href="https://ahtishamdev.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold fw-bold text-decoration-none"
+                  title="Visit Ahtisham Ul Haq Khan Portfolio"
+                >
+                  <i className="bi bi-code-slash me-1"></i>Ahtisham Ul Haq Khan
+                </a>
+                <span className="text-gold opacity-50">&bull;</span>
+                <a
+                  href="tel:+923151252016"
+                  className="text-white text-decoration-none"
+                  title="Call Developer"
+                >
+                  <i className="bi bi-telephone-fill text-gold me-1"></i>0315 1252016
+                </a>
+                <a
+                  href="https://wa.me/923151252016?text=Hi%20Ahtisham,%20I%20saw%20your%20work%20on%20Al-Raheem%20Associates%20website."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="badge bg-success text-white text-decoration-none px-2 py-1"
+                  title="Chat with Developer on WhatsApp"
+                >
+                  <i className="bi bi-whatsapp me-1"></i>WhatsApp
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -95,4 +131,3 @@ export default function Footer() {
     </footer>
   );
 }
-
