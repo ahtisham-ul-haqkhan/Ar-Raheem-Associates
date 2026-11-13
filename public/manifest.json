@@ -1,0 +1,19 @@
+{
+  "name": "AL-RAHEEM ASSOCIATES - Real Estate & Construction",
+  "short_name": "Al-Raheem",
+  "description": "Premier real estate brokerage, civil construction, skilled labor workforce, and property investments in Karachi since 2016.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061325",
+  "theme_color": "#0B1F3A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/logo-icon-key.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

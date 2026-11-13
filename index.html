@@ -195,7 +195,7 @@
        ====================================================================== -->
   <header>
     <nav class="navbar navbar-expand-lg sticky-top navbar-custom" id="mainNav" aria-label="Main Navigation">
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div class="container-fluid px-3 px-lg-4 px-xxl-5 d-flex align-items-center justify-content-between">
         <!-- Brand Logo with Extracted Card Monogram -->
         <a class="navbar-brand d-flex align-items-center" href="#home">
           <img src="images/logo-icon-key.svg" alt="AL-RAHEEM ASSOCIATES Emblem" width="48" height="36" class="me-2 navbar-brand-icon">
@@ -212,7 +212,7 @@
 
         <!-- Nav Links -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-          <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0">
+          <ul class="navbar-nav align-items-lg-center mb-0">
             <li class="nav-item">
               <a class="nav-link active" href="#home">Home</a>
             </li>
@@ -224,6 +224,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Videos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#clients">Clients</a>
@@ -903,6 +906,198 @@
                     View Details <i class="bi bi-arrow-up-right ms-1"></i>
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6B. SITE VIDEOS & WALKTHROUGHS SECTION
+         ====================================================================== -->
+    <section id="videos" class="section-padding video-showcase-section" aria-label="On-Site Construction and Project Progress Videos">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-subtitle text-gold"><i class="bi bi-camera-video me-1"></i> SITE VISITS &amp; WALKTHROUGHS</span>
+          <h2 class="section-title text-white">Live Construction &amp; Development Videos</h2>
+          <p class="section-description text-white-50">
+            Witness our on-ground execution, structural precision, and real-time site development across Karachi.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-start mt-2">
+          <!-- Main Cinema Video Player Column -->
+          <div class="col-lg-7 col-xl-7" data-aos="fade-up" data-aos-delay="100">
+            <div class="video-player-wrapper shadow-lg">
+              <div class="video-container-ratio position-relative">
+                <video
+                  id="mainVideoPlayer"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  class="main-video-player"
+                  poster="images/thumb-tour-1.jpg"
+                >
+                  <source id="mainVideoSource" src="videos/project-tour-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <!-- Video Info Details -->
+              <div class="video-info-box">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                  <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <span class="video-badge" id="videoBadge">
+                      <i class="bi bi-broadcast text-gold"></i> Architectural Planning
+                    </span>
+                    <span class="video-tag-duration" id="videoDuration">
+                      <i class="bi bi-clock me-1 text-gold"></i> 0:19 sec
+                    </span>
+                  </div>
+                  <div class="text-gold small fw-semibold" id="videoLocation">
+                    <i class="bi bi-geo-alt-fill me-1"></i> Design Studio, Karachi
+                  </div>
+                </div>
+
+                <h3 class="video-info-title" id="videoTitle">Architectural Planning &amp; Blueprint Drafting Consultation</h3>
+                <p class="video-info-desc" id="videoDesc">
+                  Founder Zohaib Khan in direct technical coordination with our architectural draftsmen, reviewing structural floor plans, elevations, and municipal approval blueprints for Karachi projects.
+                </p>
+
+                <div class="video-cta-group">
+                  <a
+                    href="https://wa.me/923418186681?text=Salam%20Al-Raheem%20Associates,%20I%20watched%20your%20site%20walkthrough%20video%20and%20want%20to%20consult%20about%20a%20construction%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-gold btn-sm px-3 py-2 fw-bold"
+                  >
+                    <i class="bi bi-whatsapp me-1"></i> Discuss Site Visit on WhatsApp
+                  </a>
+                  <a href="#contact" class="btn btn-outline-light btn-sm px-3 py-2 fw-semibold">
+                    <i class="bi bi-chat-dots me-1"></i> Book Consultation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Playlist & Features Column -->
+          <div class="col-lg-5 col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="video-playlist-wrapper">
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <h4 class="h5 fw-bold text-white mb-0 d-flex align-items-center gap-2">
+                  <i class="bi bi-collection-play-fill text-gold"></i>
+                  <span>Project Videos</span>
+                </h4>
+                <span class="badge bg-dark border border-secondary text-gold px-2 py-1 small">
+                  3 Videos
+                </span>
+              </div>
+
+              <!-- Playlist items grid -->
+              <div class="video-playlist-items">
+                <!-- Item 1 -->
+                <div class="video-side-card active" role="button" tabindex="0"
+                     data-video-src="videos/project-tour-1.mp4"
+                     data-video-poster="images/thumb-tour-1.jpg"
+                     data-video-title="Architectural Planning &amp; Blueprint Drafting Consultation"
+                     data-video-desc="Founder Zohaib Khan in direct technical coordination with our architectural draftsmen, reviewing structural floor plans, elevations, and municipal approval blueprints for Karachi projects."
+                     data-video-badge="Architectural Planning"
+                     data-video-duration="0:19 sec"
+                     data-video-location="Design Studio, Karachi">
+                  <div class="video-thumbnail-box">
+                    <img src="images/thumb-tour-1.jpg" alt="Architectural Planning Consultation" loading="lazy">
+                    <div class="video-thumbnail-play">
+                      <i class="bi bi-play-fill"></i>
+                    </div>
+                  </div>
+                  <div class="video-card-content">
+                    <div class="video-card-meta mb-1">
+                      <span class="video-badge" style="font-size: 0.66rem; padding: 0.15rem 0.45rem;">Architectural</span>
+                      <span class="video-tag-duration" style="font-size: 0.66rem; padding: 0.15rem 0.45rem;">0:19 sec</span>
+                    </div>
+                    <h4 class="video-card-title" title="Architectural Planning &amp; Blueprint Drafting Consultation">
+                      Architectural Planning &amp; Blueprints
+                    </h4>
+                    <div class="video-card-meta">
+                      <i class="bi bi-geo-alt-fill text-gold"></i>
+                      <span>Design Studio, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="video-side-card" role="button" tabindex="0"
+                     data-video-src="videos/project-tour-2.mp4"
+                     data-video-poster="images/thumb-tour-2.jpg"
+                     data-video-title="Luxury Turnkey Apartment &amp; Interior Walkthrough"
+                     data-video-desc="Comprehensive interior walkthrough of a finished luxury residential apartment showcasing modern false ceilings, ambient chandelier lighting, custom CNC woodwork, and turnkey finishing."
+                     data-video-badge="Delivered Project"
+                     data-video-duration="3:07 min"
+                     data-video-location="DHA / Clifton, Karachi">
+                  <div class="video-thumbnail-box">
+                    <img src="images/thumb-tour-2.jpg" alt="Luxury Turnkey Apartment Walkthrough" loading="lazy">
+                    <div class="video-thumbnail-play">
+                      <i class="bi bi-play"></i>
+                    </div>
+                  </div>
+                  <div class="video-card-content">
+                    <div class="video-card-meta mb-1">
+                      <span class="video-badge" style="font-size: 0.66rem; padding: 0.15rem 0.45rem;">Delivered</span>
+                      <span class="video-tag-duration" style="font-size: 0.66rem; padding: 0.15rem 0.45rem;">3:07 min</span>
+                    </div>
+                    <h4 class="video-card-title" title="Luxury Turnkey Apartment &amp; Interior Walkthrough">
+                      Luxury Delivered Apartment Walkthrough
+                    </h4>
+                    <div class="video-card-meta">
+                      <i class="bi bi-geo-alt-fill text-gold"></i>
+                      <span>DHA / Clifton, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="video-side-card" role="button" tabindex="0"
+                     data-video-src="videos/project-tour-3.mp4"
+                     data-video-poster="images/thumb-tour-3.jpg"
+                     data-video-title="Active Rooftop RCC Slab Casting &amp; Concrete Pouring"
+                     data-video-desc="Real-time on-site footage of mechanized concrete hopper lift operations and manual wheelbarrow concrete pouring over Grade-60 steel rebar slab reinforcement."
+                     data-video-badge="Active Civil Work"
+                     data-video-duration="0:20 sec"
+                     data-video-location="Active Project Site, Karachi">
+                  <div class="video-thumbnail-box">
+                    <img src="images/thumb-tour-3.jpg" alt="Rooftop RCC Slab Casting" loading="lazy">
+                    <div class="video-thumbnail-play">
+                      <i class="bi bi-play"></i>
+                    </div>
+                  </div>
+                  <div class="video-card-content">
+                    <div class="video-card-meta mb-1">
+                      <span class="video-badge" style="font-size: 0.66rem; padding: 0.15rem 0.45rem;">Civil Work</span>
+                      <span class="video-tag-duration" style="font-size: 0.66rem; padding: 0.15rem 0.45rem;">0:20 sec</span>
+                    </div>
+                    <h4 class="video-card-title" title="Active Rooftop RCC Slab Casting &amp; Concrete Pouring">
+                      Active Rooftop RCC Slab Casting
+                    </h4>
+                    <div class="video-card-meta">
+                      <i class="bi bi-geo-alt-fill text-gold"></i>
+                      <span>Active Project Site, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verified Supervision Card -->
+              <div class="video-notice-box mt-1">
+                <div class="d-flex align-items-center gap-2 mb-2 text-gold fw-bold">
+                  <i class="bi bi-patch-check-fill fs-5"></i>
+                  <span>100% Authentic Site Documentation</span>
+                </div>
+                <p class="text-white-50 small mb-0" style="font-size: 0.82rem; line-height: 1.6;">
+                  Every video is recorded directly from our active project sites under the personal engineering supervision of <strong class="text-white">Zohaib Khan</strong>. We ensure transparent milestone tracking for our clients.
+                </p>
               </div>
             </div>
           </div>
@@ -1733,6 +1928,7 @@
             <li><a href="#about"><i class="bi bi-chevron-right text-gold"></i>About Founder</a></li>
             <li><a href="#services"><i class="bi bi-chevron-right text-gold"></i>Our Services</a></li>
             <li><a href="#projects"><i class="bi bi-chevron-right text-gold"></i>Project Portfolio</a></li>
+            <li><a href="#videos"><i class="bi bi-chevron-right text-gold"></i>Site Videos</a></li>
             <li><a href="#clients"><i class="bi bi-chevron-right text-gold"></i>Valued Clients</a></li>
             <li><a href="#credentials"><i class="bi bi-chevron-right text-gold"></i>Credentials</a></li>
             <li><a href="#contact"><i class="bi bi-chevron-right text-gold"></i>Contact Office</a></li>

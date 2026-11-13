@@ -462,12 +462,13 @@ img {
 
 .navbar-custom .nav-link {
   font-family: var(--font-heading);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.88);
-  padding: 8px 14px !important;
+  padding: 8px 10px !important;
   position: relative;
   transition: var(--transition-fast);
+  white-space: nowrap;
 }
 
 .navbar-custom .nav-link:hover,
@@ -479,8 +480,8 @@ img {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 14px;
-  right: 14px;
+  left: 10px;
+  right: 10px;
   height: 2px;
   background-color: var(--accent-gold);
   transform: scaleX(0);
@@ -490,6 +491,75 @@ img {
 .navbar-custom .nav-link:hover::after,
 .navbar-custom .nav-link.active::after {
   transform: scaleX(1);
+}
+
+/* Single-Line Desktop Navbar Lock & Auto Spacing */
+@media (min-width: 992px) {
+  .navbar-custom .container,
+  .navbar-custom .container-fluid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .navbar-custom .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto !important;
+    flex-grow: 0 !important;
+    align-items: center !important;
+  }
+
+  .navbar-custom .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .navbar-brand-title {
+    font-size: 1.05rem !important;
+  }
+
+  .navbar-brand-tagline {
+    font-size: 0.5rem !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .navbar-brand-icon {
+    width: 36px !important;
+    height: 27px !important;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 0.8rem !important;
+    padding: 6px 7px !important;
+  }
+
+  .navbar-custom .btn-gold {
+    padding: 6px 10px !important;
+    font-size: 0.78rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .navbar-brand-title {
+    font-size: 1.2rem !important;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 0.85rem !important;
+    padding: 6px 9px !important;
+  }
+
+  .navbar-custom .btn-gold {
+    padding: 7px 12px !important;
+    font-size: 0.82rem !important;
+  }
 }
 
 .navbar-toggler {
@@ -2766,3 +2836,330 @@ img {
     font-size: 1.7rem !important;
   }
 }
+
+/* ==========================================================================
+   VIDEO SHOWCASE SECTION (AL-RAHEEM ASSOCIATES - FULLY RESPONSIVE)
+   ========================================================================== */
+.video-showcase-section {
+  background: linear-gradient(180deg, #071526 0%, #0b1f3a 50%, #071526 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(201, 162, 39, 0.25);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.25);
+}
+
+.video-player-wrapper {
+  background: #061325;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(201, 162, 39, 0.28);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 35px rgba(201, 162, 39, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 100%;
+}
+
+.video-player-wrapper:hover {
+  border-color: rgba(201, 162, 39, 0.55);
+}
+
+.video-container-ratio {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 460px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.main-video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+  display: block;
+  outline: none;
+}
+
+.video-info-box {
+  padding: 1.4rem 1.6rem;
+  background: rgba(14, 36, 68, 0.85);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-info-title {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+.video-info-desc {
+  font-size: clamp(0.84rem, 1.1vw, 0.92rem);
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  margin-bottom: 1.15rem;
+}
+
+.video-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  background: rgba(201, 162, 39, 0.15);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.video-tag-duration {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.65rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.video-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Playlist Side Cards */
+.video-playlist-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 100%;
+}
+
+.video-playlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.video-side-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(14, 36, 68, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.85rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.video-side-card:hover {
+  background: rgba(22, 46, 78, 0.95);
+  border-color: rgba(201, 162, 39, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.video-side-card.active {
+  background: linear-gradient(135deg, rgba(22, 46, 78, 0.95) 0%, rgba(14, 36, 68, 0.95) 100%);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 16px rgba(201, 162, 39, 0.25), inset 0 0 0 1px rgba(201, 162, 39, 0.25);
+}
+
+.video-thumbnail-box {
+  position: relative;
+  width: 86px;
+  height: 60px;
+  flex: 0 0 86px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #061325;
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-thumbnail-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-thumbnail-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  background: rgba(201, 162, 39, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b1f3a;
+  font-size: 0.72rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.video-side-card:hover .video-thumbnail-play {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: #ffffff;
+  color: #0b1f3a;
+}
+
+.video-card-content {
+  flex: 1 1 0%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.video-card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+  word-break: break-word;
+}
+
+.video-side-card:hover .video-card-title,
+.video-side-card.active .video-card-title {
+  color: var(--accent-gold-light);
+}
+
+.video-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.video-notice-box {
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px dashed rgba(201, 162, 39, 0.4);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES FOR VIDEO SECTION
+   ========================================================================== */
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .video-playlist-items {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.85rem !important;
+  }
+
+  .video-container-ratio {
+    max-height: 420px;
+  }
+}
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767.98px) {
+  .video-showcase-section {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .video-container-ratio {
+    max-height: 280px;
+  }
+
+  .video-info-box {
+    padding: 1rem !important;
+  }
+
+  .video-cta-group {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .video-cta-group .btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0.7rem 1rem !important;
+    font-size: 0.88rem !important;
+  }
+
+  .video-side-card {
+    padding: 0.65rem 0.75rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .video-thumbnail-box {
+    width: 76px !important;
+    height: 54px !important;
+    flex: 0 0 76px !important;
+  }
+
+  .video-card-title {
+    font-size: 0.82rem !important;
+  }
+
+  .video-notice-box {
+    padding: 0.85rem !important;
+    font-size: 0.78rem !important;
+  }
+}
+
+/* Very Small Mobile (< 400px) */
+@media (max-width: 399.98px) {
+  .video-thumbnail-box {
+    width: 66px !important;
+    height: 48px !important;
+    flex: 0 0 66px !important;
+  }
+
+  .video-badge {
+    font-size: 0.68rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+
+  .video-tag-duration {
+    font-size: 0.68rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+
+  .video-card-title {
+    font-size: 0.78rem !important;
+  }
+}
+  border-radius: var(--radius-md);
+  padding: 1.15rem;
+}
+

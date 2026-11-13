@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E2444"/>
+      <stop offset="50%" stop-color="#0B1F3A"/>
+      <stop offset="100%" stop-color="#061325"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC15D"/>
+      <stop offset="50%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#9F7E18"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(201, 162, 39, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="380" fill="url(#bgGrad)"/>
+  <rect width="600" height="380" fill="url(#grid)"/>
+
+  <!-- Construction Graphic Silhouettes -->
+  <!-- Crane -->
+  <path d="M 450 70 L 580 70 M 520 70 L 520 280 M 520 70 L 450 110 M 520 70 L 560 100" stroke="#C9A227" stroke-width="3" fill="none" opacity="0.35"/>
+  <line x1="480" y1="70" x2="480" y2="140" stroke="#C9A227" stroke-width="2" stroke-dasharray="3,3" opacity="0.5"/>
+  <rect x="470" y="140" width="20" height="15" fill="#DFC15D" opacity="0.5"/>
+
+  <!-- Building Pillars & RCC Columns -->
+  <g fill="none" stroke="rgba(201, 162, 39, 0.25)" stroke-width="2">
+    <rect x="70" y="130" width="80" height="180" rx="4"/>
+    <rect x="180" y="90" width="90" height="220" rx="4"/>
+    <rect x="300" y="150" width="75" height="160" rx="4"/>
+    <line x1="70" y1="180" x2="150" y2="180"/>
+    <line x1="70" y1="230" x2="150" y2="230"/>
+    <line x1="180" y1="140" x2="270" y2="140"/>
+    <line x1="180" y1="190" x2="270" y2="190"/>
+    <line x1="180" y1="240" x2="270" y2="240"/>
+  </g>
+
+  <!-- Ground line -->
+  <line x1="0" y1="310" x2="600" y2="310" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Dark Vignette Overlay -->
+  <rect width="600" height="380" fill="black" opacity="0.35"/>
+
+  <!-- Center Badge / Branding -->
+  <rect x="40" y="40" width="165" height="32" rx="16" fill="rgba(11, 31, 58, 0.85)" stroke="#C9A227" stroke-width="1.5"/>
+  <circle cx="56" cy="56" r="5" fill="#25D366"/>
+  <text x="68" y="61" fill="#DFC15D" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">LIVE SITE TOUR</text>
+
+  <text x="50" y="245" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">SITE VISIT &amp; PROGRESS</text>
+  <text x="50" y="272" fill="#DFC15D" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="1">AL-RAHEEM ASSOCIATES &bull; KARACHI</text>
+
+  <!-- Big Play Watermark -->
+  <circle cx="300" cy="170" r="44" fill="rgba(201, 162, 39, 0.2)" stroke="#C9A227" stroke-width="2"/>
+  <polygon points="292,150 318,170 292,190" fill="#DFC15D"/>
+
+  <!-- Outer Frame -->
+  <rect x="4" y="4" width="592" height="372" fill="none" stroke="rgba(201, 162, 39, 0.3)" stroke-width="1.5" rx="8"/>
+</svg>

@@ -469,4 +469,54 @@ document.addEventListener('DOMContentLoaded', function () {
     if (waChatInput) waChatInput.value = '';
     closeWhatsAppWidget();
   }
+
+  // ========================================================================
+  // 14. VIDEO SHOWCASE PLAYLIST SWITCHER
+  // ========================================================================
+  const videoCards = document.querySelectorAll('.video-showcase-section .video-side-card');
+  const mainVideoPlayer = document.getElementById('mainVideoPlayer');
+  const mainVideoSource = document.getElementById('mainVideoSource');
+  const videoTitle = document.getElementById('videoTitle');
+  const videoDesc = document.getElementById('videoDesc');
+  const videoBadge = document.getElementById('videoBadge');
+  const videoDuration = document.getElementById('videoDuration');
+  const videoLocation = document.getElementById('videoLocation');
+
+  if (videoCards.length > 0 && mainVideoPlayer) {
+    videoCards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        const src = this.getAttribute('data-video-src');
+        const poster = this.getAttribute('data-video-poster');
+        const title = this.getAttribute('data-video-title');
+        const desc = this.getAttribute('data-video-desc');
+        const badge = this.getAttribute('data-video-badge');
+        const duration = this.getAttribute('data-video-duration');
+        const location = this.getAttribute('data-video-location');
+
+        videoCards.forEach(function (c) { c.classList.remove('active'); });
+        this.classList.add('active');
+
+        if (videoTitle && title) videoTitle.textContent = title;
+        if (videoDesc && desc) videoDesc.textContent = desc;
+        if (videoLocation && location) {
+          videoLocation.innerHTML = '<i class="bi bi-geo-alt-fill me-1"></i> ' + location;
+        }
+        if (videoBadge && badge) {
+          videoBadge.innerHTML = '<i class="bi bi-broadcast text-gold"></i> ' + badge;
+        }
+        if (videoDuration && duration) {
+          videoDuration.innerHTML = '<i class="bi bi-clock me-1 text-gold"></i> ' + duration;
+        }
+
+        if (src) {
+          if (mainVideoSource) mainVideoSource.src = src;
+          if (poster) mainVideoPlayer.poster = poster;
+          mainVideoPlayer.load();
+          mainVideoPlayer.play().catch(function () {
+            // Autoplay policy fallback
+          });
+        }
+      });
+    });
+  }
 });

@@ -1,5 +1,13 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: '404 - Page Not Found | AL-RAHEEM ASSOCIATES',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function NotFound() {
   return (
     <div style={{
