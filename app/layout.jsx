@@ -61,9 +61,9 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/visiting-card-blue.svg',
-        width: 1050,
-        height: 600,
+        url: '/images/zvisiting-card-user.jpg',
+        width: 1368,
+        height: 784,
         alt: 'AL-RAHEEM ASSOCIATES - Zohaib Khan',
       },
     ],
@@ -73,7 +73,7 @@ export const metadata = {
     title: 'AL-RAHEEM ASSOCIATES | Real Estate & Construction',
     description:
       'Established in 2016. Certified real estate, civil construction, and skilled labor firm in Keamari, Karachi.',
-    images: ['/images/visiting-card-blue.svg'],
+    images: ['/images/zvisiting-card-user.jpg'],
   },
   robots: {
     index: true,
