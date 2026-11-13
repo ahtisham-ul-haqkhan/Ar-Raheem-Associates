@@ -3,24 +3,24 @@
 import { useEffect } from 'react';
 
 // ── Section Components ────────────────────────────────────────────────────────
-import Preloader         from './components/Preloader';
-import TopBar            from './components/TopBar';
-import Navbar            from './components/Navbar';
-import HeroSection       from './components/HeroSection';
-import AboutSection      from './components/AboutSection';
-import ServicesSection   from './components/ServicesSection';
-import ProjectsSection   from './components/ProjectsSection';
-import VideosSection     from './components/VideosSection';
-import ClientsSection    from './components/ClientsSection';
+import Preloader from './components/Preloader';
+import TopBar from './components/TopBar';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import ServicesSection from './components/ServicesSection';
+import ProjectsSection from './components/ProjectsSection';
+import VideosSection from './components/VideosSection';
+import ClientsSection from './components/ClientsSection';
 import CredentialsSection from './components/CredentialsSection';
-import WhyUsSection      from './components/WhyUsSection';
-import CtaBanner         from './components/CtaBanner';
-import ContactSection    from './components/ContactSection';
-import Footer            from './components/Footer';
+import WhyUsSection from './components/WhyUsSection';
+import CtaBanner from './components/CtaBanner';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 // ── Modals & Widgets ──────────────────────────────────────────────────────────
-import ProjectModal      from './components/ProjectModal';
-import CredentialModal   from './components/CredentialModal';
-import WhatsAppWidget    from './components/WhatsAppWidget';
+import ProjectModal from './components/ProjectModal';
+import CredentialModal from './components/CredentialModal';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 export default function Home() {
   useEffect(() => {
@@ -35,8 +35,10 @@ export default function Home() {
       // AOS (Animate on Scroll)
       import('aos').then((mod) => {
         AOSInstance = mod.default || mod;
-        AOSInstance.init({ duration: 750, easing: 'ease-out-cubic', once: true, offset: 60,
-          disable: () => window.innerWidth < 768 });
+        AOSInstance.init({
+          duration: 750, easing: 'ease-out-cubic', once: true, offset: 60,
+          disable: () => window.innerWidth < 768
+        });
       }).catch(err => console.error('AOS load error:', err));
     }
 
@@ -115,19 +117,19 @@ export default function Home() {
         const btn = event.relatedTarget;
         if (!btn) return;
         const get = (attr) => btn.getAttribute(attr) || '';
-        projectModal.querySelector('#modalProjectTitle').textContent   = get('data-proj-title') || 'Project Details';
-        projectModal.querySelector('#modalProjectClient').textContent  = get('data-proj-client') || 'Confidential Client';
+        projectModal.querySelector('#modalProjectTitle').textContent = get('data-proj-title') || 'Project Details';
+        projectModal.querySelector('#modalProjectClient').textContent = get('data-proj-client') || 'Confidential Client';
         projectModal.querySelector('#modalProjectCategory').textContent = get('data-proj-category') || 'Construction';
         const statusEl = projectModal.querySelector('#modalProjectStatus');
         statusEl.textContent = get('data-proj-status') || 'Completed';
-        statusEl.className   = 'badge ' + (get('data-proj-status-class') || 'bg-success');
-        projectModal.querySelector('#modalProjectYear').textContent     = get('data-proj-year') || '2025';
+        statusEl.className = 'badge ' + (get('data-proj-status-class') || 'bg-success');
+        projectModal.querySelector('#modalProjectYear').textContent = get('data-proj-year') || '2025';
         projectModal.querySelector('#modalProjectLocation').textContent = get('data-proj-location') || 'Karachi, Pakistan';
-        projectModal.querySelector('#modalProjectArea').textContent     = get('data-proj-area') || 'N/A';
-        projectModal.querySelector('#modalProjectDesc').textContent     = get('data-proj-desc') || '';
+        projectModal.querySelector('#modalProjectArea').textContent = get('data-proj-area') || 'N/A';
+        projectModal.querySelector('#modalProjectDesc').textContent = get('data-proj-desc') || '';
         const img = projectModal.querySelector('#modalProjectImage');
         if (img && get('data-proj-image')) { img.src = get('data-proj-image'); img.alt = get('data-proj-title'); }
-        
+
         // Populate Gallery Strip
         const galleryWrap = projectModal.querySelector('#modalProjectGalleryWrap');
         const galleryContainer = projectModal.querySelector('#modalProjectGallery');
@@ -191,16 +193,16 @@ export default function Home() {
         const trigger = event.relatedTarget;
         if (!trigger) return;
         const get = (attr) => trigger.getAttribute(attr) || '';
-        credentialModal.querySelector('#modalDocTitle').textContent  = get('data-doc-title') || 'Official Document';
+        credentialModal.querySelector('#modalDocTitle').textContent = get('data-doc-title') || 'Official Document';
         credentialModal.querySelector('#modalDocNumber').textContent = get('data-doc-number');
         const docImg = credentialModal.querySelector('#modalDocImg');
         if (docImg && get('data-doc-src')) { docImg.src = get('data-doc-src'); docImg.alt = get('data-doc-title'); }
-        const srcBack    = get('data-doc-src-back');
-        const colFront   = credentialModal.querySelector('#modalColFront');
-        const colBack    = credentialModal.querySelector('#modalColBack');
+        const srcBack = get('data-doc-src-back');
+        const colFront = credentialModal.querySelector('#modalColFront');
+        const colBack = credentialModal.querySelector('#modalColBack');
         const badgeFront = credentialModal.querySelector('#modalBadgeFront');
-        const badgeBack  = credentialModal.querySelector('#modalBadgeBack');
-        const imgBack    = credentialModal.querySelector('#modalDocImgBack');
+        const badgeBack = credentialModal.querySelector('#modalBadgeBack');
+        const imgBack = credentialModal.querySelector('#modalDocImgBack');
         if (srcBack) {
           colFront?.setAttribute('class', 'col-12 col-md-6 text-center');
           colBack?.classList.remove('d-none');
@@ -256,15 +258,15 @@ export default function Home() {
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
     // ── 9. WHATSAPP CHAT POPUP WIDGET ─────────────────────────────────────────
-    const whatsappToggleBtn  = document.getElementById('whatsappToggleBtn');
-    const whatsappChatPopup  = document.getElementById('whatsappChatPopup');
-    const waPopupCloseBtn    = document.getElementById('waPopupCloseBtn');
-    const waChatWidgetForm   = document.getElementById('waChatWidgetForm');
-    const waChatInput        = document.getElementById('waChatInput');
-    const waPillBtns         = document.querySelectorAll('.wa-pill-btn');
-    const waIconOpen         = document.querySelector('.wa-icon-open');
-    const waIconClose        = document.querySelector('.wa-icon-close');
-    const waChatTime         = document.getElementById('waChatTime');
+    const whatsappToggleBtn = document.getElementById('whatsappToggleBtn');
+    const whatsappChatPopup = document.getElementById('whatsappChatPopup');
+    const waPopupCloseBtn = document.getElementById('waPopupCloseBtn');
+    const waChatWidgetForm = document.getElementById('waChatWidgetForm');
+    const waChatInput = document.getElementById('waChatInput');
+    const waPillBtns = document.querySelectorAll('.wa-pill-btn');
+    const waIconOpen = document.querySelector('.wa-icon-open');
+    const waIconClose = document.querySelector('.wa-icon-close');
+    const waChatTime = document.getElementById('waChatTime');
 
     function openWA() {
       whatsappChatPopup?.classList.add('show');
@@ -359,6 +361,7 @@ export default function Home() {
         {/* ── CONTACT SECTION ─────────────────────── */}
         <ContactSection />
       </main>
+
 
       {/* ── FOOTER ──────────────────────────────── */}
       <Footer />
