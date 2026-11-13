@@ -170,9 +170,9 @@ export default function AboutSection() {
                   data-bs-target="#credentialModal"
                   data-doc-title="AL-RAHEEM ASSOCIATES - Official Executive Business Card"
                   data-doc-number="Proprietor: Zohaib Khan | Keamari, Karachi"
-                  data-doc-src="images/visiting-card-blue.svg"
-                  data-doc-desc="Official Executive Visiting Card of AL-RAHEEM ASSOCIATES (Royal Blue Edition).">
-                  <img src="images/visiting-card-blue.svg" alt="AL-RAHEEM ASSOCIATES Official Executive Visiting Card - Royal Blue" className="img-fluid w-100" style={{ maxHeight: '290px', objectFit: 'contain' }} />
+                  data-doc-src="images/zvisiting-card-user.jpg"
+                  data-doc-desc="Official Executive Visiting Card of AL-RAHEEM ASSOCIATES. Demonstrates commercial operations in booking apartments &amp; shops, resale of flats, shops &amp; offices, rentals of flats, shops &amp; godowns, property assessment, and direct executive contact with Zohaib Khan (+92 341 8186681).">
+                  <img src="images/zvisiting-card-user.jpg" alt="AL-RAHEEM ASSOCIATES Official Executive Visiting Card" className="img-fluid w-100" style={{ maxHeight: '290px', objectFit: 'contain' }} />
                   <div className="credential-zoom-overlay">
                     <i className="bi bi-zoom-in fs-2 text-white"></i>
                     <span className="text-white fw-semibold">Click to Inspect Card</span>
