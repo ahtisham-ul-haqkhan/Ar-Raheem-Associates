@@ -171,6 +171,27 @@ const jsonLd = {
     },
     {
       '@type': 'VideoObject',
+      '@id': 'https://arraheemassociates.vercel.app/#video-owner-intro',
+      name: 'Zohaib Khan – Owner AL-RAHEEM ASSOCIATES | Company Introduction & Vision',
+      description:
+        'Official introduction by Zohaib Khan, Owner and Founder of AL-RAHEEM ASSOCIATES, Karachi. Presenting the company\'s real estate brokerage, turnkey civil construction, skilled labor workforce, and property investment services established since 2016.',
+      thumbnailUrl: [
+        'https://arraheemassociates.vercel.app/images/Professional_Suit_Portrait.png',
+      ],
+      uploadDate: '2026-11-13T00:00:00+05:00',
+      contentUrl: 'https://arraheemassociates.vercel.app/videos/owner-video.mp4',
+      embedUrl: 'https://arraheemassociates.vercel.app/#home',
+      publisher: {
+        '@type': 'Organization',
+        name: 'AL-RAHEEM ASSOCIATES',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://arraheemassociates.vercel.app/images/logo-icon-key.svg',
+        },
+      },
+    },
+    {
+      '@type': 'VideoObject',
       '@id': 'https://arraheemassociates.vercel.app/#video-site-tour',
       name: 'Al-Raheem Associates - Comprehensive Project Walkthrough',
       description:
