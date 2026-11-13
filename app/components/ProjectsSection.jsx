@@ -19,7 +19,7 @@ export default function ProjectsSection() {
       img: '/project-images/project-1-1.jpeg',
       imgAlt: 'Ahtisham Enterprise Corporate Complex - Live Site Construction',
       title: 'Ahtisham Enterprise Corporate Complex',
-      location: 'Main Shahrah-e-Faisal, Karachi',
+      location: 'Block 40, Tarachand Road, Keamari, Karachi',
       year: '2025 - 2026',
       badgeText: '7 Real Site Photos',
       gallery: [
@@ -38,7 +38,7 @@ export default function ProjectsSection() {
         status: 'Active Civil Work',
         statusClass: 'bg-warning text-dark',
         year: '2025 - 2026',
-        location: 'Main Shahrah-e-Faisal, Karachi, Pakistan',
+        location: 'Block 40, Tarachand Road, Keamari, Karachi',
         area: '48,500 Sq. Ft.',
         image: '/project-images/project-1-1.jpeg',
         desc: 'Actual on-site civil construction and structural execution by AL-RAHEEM ASSOCIATES. Includes RCC column casting, slab reinforcement with Grade-60 steel, mechanized concrete pouring, and turnkey structural supervision under Founder Zohaib Khan.',
