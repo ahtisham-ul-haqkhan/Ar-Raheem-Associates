@@ -1,10 +1,4 @@
-'use client';
-import { useState, useRef } from 'react';
-
 export default function HeroSection() {
-  const [ownerVideoPlaying, setOwnerVideoPlaying] = useState(false);
-  const ownerVideoRef = useRef(null);
-
   return (
     <section
       id="home"
@@ -60,57 +54,22 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Hero Right Column: Owner Video */}
+          {/* Hero Right Column: Showcase Image Card */}
           <div className="col-lg-5 col-xl-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <div className="hero-image-showcase">
-              <div className="hero-main-card position-relative overflow-hidden">
-                <video
-                  ref={ownerVideoRef}
+              <div className="hero-main-card position-relative overflow-hidden rounded-4 shadow-lg">
+                <img
+                  src="/images/WhatsApp Image 2026-11-13 at 4.18.56 PM.jpeg"
+                  alt="Zohaib Khan – Founder & Owner of AL-RAHEEM ASSOCIATES"
                   className="hero-showcase-img"
-                  src="/videos/owner-video.mp4"
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  aria-label="Zohaib Khan – Owner of AL-RAHEEM ASSOCIATES introducing the company"
-                  style={{ objectFit: 'cover', width: '100%' }}
-                >
-                  Your browser does not support the video tag.
-                </video>
-
-                {/* Play / Pause Button Overlay */}
-                <button
-                  onClick={() => {
-                    const vid = ownerVideoRef.current;
-                    if (!vid) return;
-                    if (ownerVideoPlaying) {
-                      vid.pause();
-                      setOwnerVideoPlaying(false);
-                    } else {
-                      vid.play();
-                      setOwnerVideoPlaying(true);
-                    }
-                  }}
-                  aria-label={ownerVideoPlaying ? 'Pause owner video' : 'Play owner video'}
-                  style={{
-                    position: 'absolute', top: '50%', left: '50%',
-                    transform: 'translate(-50%, -50%)', width: '64px', height: '64px',
-                    borderRadius: '50%', border: '3px solid #c9a227',
-                    background: 'rgba(11,31,58,0.75)', color: '#c9a227',
-                    fontSize: '1.6rem', display: 'flex', alignItems: 'center',
-                    justifyContent: 'center', cursor: 'pointer', zIndex: 5,
-                    backdropFilter: 'blur(4px)', transition: 'opacity 0.3s, transform 0.2s',
-                    opacity: ownerVideoPlaying ? 0 : 1,
-                  }}
-                  onMouseEnter={e => { e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1.12)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.transform = 'translate(-50%, -50%) scale(1)'; }}
-                >
-                  <i className={ownerVideoPlaying ? 'bi bi-pause-fill' : 'bi bi-play-fill'} style={{ marginLeft: ownerVideoPlaying ? '0' : '4px' }}></i>
-                </button>
+                  width="600"
+                  height="720"
+                  style={{ objectFit: 'cover', width: '100%', minHeight: '420px', display: 'block' }}
+                />
 
                 <div className="hero-card-overlay">
                   <span className="badge bg-gold text-navy fw-bold mb-1">Karachi Landmark Developments</span>
-                  <h2 className="text-white h6 mb-1">AL-RAHEEM ASSOCIATES – Owner's Message</h2>
+                  <h2 className="text-white h6 mb-1">AL-RAHEEM ASSOCIATES &bull; Est. 2016</h2>
                   <small className="text-white-50">Keamari &bull; Clifton &bull; Shahrah-e-Faisal &bull; Turnkey Execution</small>
                 </div>
               </div>
@@ -171,4 +130,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
