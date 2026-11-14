@@ -25,7 +25,6 @@ export default function Navbar() {
               <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
               <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
               <li className="nav-item"><a className="nav-link" href="#videos">Videos</a></li>
-              <li className="nav-item"><a className="nav-link" href="#clients">Clients</a></li>
               <li className="nav-item"><a className="nav-link" href="#credentials">Credentials</a></li>
               <li className="nav-item"><a className="nav-link" href="#why-us">Why Us</a></li>
               <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>

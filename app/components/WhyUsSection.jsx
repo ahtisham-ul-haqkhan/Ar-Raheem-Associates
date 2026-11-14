@@ -60,10 +60,10 @@ export default function WhyUsSection() {
       <div className="container">
         {/* Section Header */}
         <div className="section-header text-center" data-aos="fade-up">
-          <span className="section-subtitle">OUR ADVANTAGE</span>
-          <h2 className="section-title">Why Choose AL-RAHEEM ASSOCIATES</h2>
+          <span className="section-subtitle">ENTERPRISE PROFILE</span>
+          <h2 className="section-title">Corporate Governance &amp; Core Strengths</h2>
           <p className="section-description">
-            Delivering trusted real estate brokerage, turnkey civil construction, skilled labor workforce, and transparent property development backed by official Chamber and tax compliance.
+            Operating as <strong>M/s Al-Raheem Associates</strong> since 2016, our enterprise adheres to statutory corporate transparency, Karachi Chamber of Commerce certification, and proven execution capacity across Karachi.
           </p>
         </div>
 
@@ -91,27 +91,41 @@ export default function WhyUsSection() {
           ))}
         </div>
 
-        {/* 4-Step Process Timeline */}
+        {/* Corporate Enterprise Fact Sheet */}
         <div className="process-wrapper process-timeline-wrapper" data-aos="fade-up">
           <div className="text-center mb-4">
-            <span className="section-subtitle">TRANSPARENT WORKFLOW</span>
-            <h3 className="h3 fw-bold text-navy">Our 4-Step Project Roadmap</h3>
-            <p className="text-muted small">From initial consultation to final keys handover</p>
-          </div>
-
-          {/* Mobile Swipe Hint Bar for Roadmap */}
-          <div className="d-flex d-md-none justify-content-between align-items-center mb-3 px-1 text-muted small">
-            <span className="d-flex align-items-center gap-1">
-              <i className="bi bi-arrow-left-right text-gold"></i>
-              <span>Swipe left/right through roadmap</span>
-            </span>
-            <span className="badge bg-gold-subtle text-gold border border-gold-subtle fw-semibold px-2 py-1">
-              4 Steps
-            </span>
+            <span className="section-subtitle">EXECUTIVE SUMMARY</span>
+            <h3 className="h3 fw-bold text-navy">Corporate Fact Sheet &amp; Governance</h3>
+            <p className="text-muted small">Verified corporate registration and operational parameters</p>
           </div>
 
           <div className="row g-4 process-timeline-row">
-            {processSteps.map((step, index) => (
+            {[
+              {
+                num: '01',
+                icon: 'bi-person-badge-fill',
+                title: 'Ownership & Legal Status',
+                text: 'Sole Proprietorship under Founder Zohaib Khan, operating as M/s Al-Raheem Associates established in 2016 in Karachi.',
+              },
+              {
+                num: '02',
+                icon: 'bi-award-fill',
+                title: 'Chamber Statutory Member',
+                text: 'Full active member of Karachi Chamber of Commerce & Industry (KCCI Membership # 150586) affiliated with FPCCI.',
+              },
+              {
+                num: '03',
+                icon: 'bi-file-earmark-check-fill',
+                title: 'Tax Compliance & ATL',
+                text: 'Active Taxpayer List (ATL) registered with Federal Board of Revenue (FBR NTN # 5357401-7, Regional Tax Office RTO-I Karachi).',
+              },
+              {
+                num: '04',
+                icon: 'bi-building-check',
+                title: 'Strategic Keamari HQ',
+                text: 'Headquartered at Suite 4, Plot 128, Azan Centre, Keamari Port corridor, managing prime civil and commercial developments.',
+              },
+            ].map((step, index) => (
               <div className="col-md-6 col-lg-3" key={index}>
                 <div className="process-card process-step-card h-100">
                   <div className="process-step-number">{step.num}</div>

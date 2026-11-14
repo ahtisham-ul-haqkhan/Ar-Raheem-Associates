@@ -1,19 +1,21 @@
 export default function CredentialsSection() {
-  const documents = [
-    {
-      issuer: 'Karachi Chamber of Commerce & Industry',
-      title: 'KCCI Membership Certificate',
-      desc: 'Official statutory membership (Reg # 150586) affiliated with FPCCI, valid through 31st March 2027.',
-      img: 'images/kcci-certificate.jpg',
-      imgAlt: 'KCCI Membership Certificate',
-      modal: {
-        title: 'Karachi Chamber of Commerce & Industry (KCCI) Certificate',
-        number: 'Membership No: 150586 | Serial No: K 302136',
-        src: 'images/kcci-certificate.jpg',
-        pdf: 'images/kcci-membership-certificate.pdf',
-        desc: 'Official Membership Certificate granted by Karachi Chamber of Commerce & Industry (KCCI), affiliated with FPCCI, certifying M/s Al-Raheem Associates as a statutory corporate member valid through 31st March 2027.',
-      }
-    },
+  const kcciCertificate = {
+    issuer: 'Karachi Chamber of Commerce & Industry',
+    title: 'KCCI Membership Certificate',
+    desc: 'Official statutory membership (Reg # 150586) affiliated with FPCCI, valid through 31st March 2027.',
+    img: 'images/kcci-certificate.jpg',
+    imgAlt: 'KCCI Membership Certificate',
+    modal: {
+      title: 'Karachi Chamber of Commerce & Industry (KCCI) Certificate',
+      number: 'Membership No: 150586 | Serial No: K 302136',
+      src: 'images/kcci-certificate.jpg',
+      pdf: 'images/kcci-membership-certificate.pdf',
+      desc: 'Official Membership Certificate granted by Karachi Chamber of Commerce & Industry (KCCI), affiliated with FPCCI, certifying M/s Al-Raheem Associates as a statutory corporate member valid through 31st March 2027.',
+    }
+  };
+
+  /* ── PRESERVED IN CODEBASE: Other Credentials (Commented out per profile requirements) ──
+  const otherDocuments = [
     {
       issuer: 'Karachi Chamber of Commerce & Industry',
       title: 'KCCI Official Member Card',
@@ -59,20 +61,21 @@ export default function CredentialsSection() {
       }
     },
   ];
+  ── */
 
   return (
     <section id="credentials" className="section-padding bg-white" aria-label="Official Company Credentials and Legal Registration">
       <div className="container">
         <div className="section-header text-center" data-aos="fade-up">
           <span className="section-subtitle">OFFICIAL LEGAL STANDING</span>
-          <h2 className="section-title">Company Credentials &amp; Certifications</h2>
+          <h2 className="section-title">Chamber Certification &amp; Legal Standing</h2>
           <p className="section-description">
-            <strong>M/s Al-Raheem Associates</strong> operates as an officially registered, chamber-certified, and tax-compliant engineering and development firm in Pakistan.
+            <strong>M/s Al-Raheem Associates</strong> is a statutory corporate member of the Karachi Chamber of Commerce &amp; Industry (KCCI), affiliated with the Federation of Pakistan Chambers of Commerce &amp; Industry (FPCCI).
           </p>
         </div>
 
         {/* Registration Banner */}
-        <div className="credentials-banner" data-aos="fade-up" data-aos-delay="100">
+        <div className="credentials-banner mb-4" data-aos="fade-up" data-aos-delay="100">
           <div className="row g-3 align-items-center">
             {[
               { icon: 'bi-patch-check-fill', label: 'KCCI Membership No.', value: '150586 (Valid 2027)' },
@@ -93,45 +96,71 @@ export default function CredentialsSection() {
           </div>
         </div>
 
-        {/* Document Cards Grid */}
-        <div className="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          {documents.map((doc, index) => (
-            <div className="col-12 col-sm-6 col-lg-3" key={index}>
-              <div className="credential-card">
-                <div className="credential-thumbnail-box"
-                  data-bs-toggle="modal" data-bs-target="#credentialModal"
-                  data-doc-title={doc.modal.title} data-doc-number={doc.modal.number}
-                  data-doc-src={doc.modal.src} data-doc-src-back={doc.modal.srcBack || ''}
-                  data-doc-pdf={doc.modal.pdf} data-doc-desc={doc.modal.desc}>
-                  <img src={doc.img} alt={doc.imgAlt} className="credential-thumbnail-img" width="400" height="560" loading="lazy" />
-                  <div className="credential-zoom-overlay">
-                    <i className="bi bi-zoom-in fs-2"></i>
-                    <span className="fw-semibold">Inspect Document</span>
-                  </div>
+        {/* Centered Single Official KCCI Certificate Card */}
+        <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div className="col-12 col-md-8 col-lg-5 col-xl-4">
+            <div className="credential-card shadow-lg border border-gold-subtle text-center">
+              <div
+                className="credential-thumbnail-box"
+                style={{ cursor: 'pointer' }}
+                data-bs-toggle="modal"
+                data-bs-target="#credentialModal"
+                data-doc-title={kcciCertificate.modal.title}
+                data-doc-number={kcciCertificate.modal.number}
+                data-doc-src={kcciCertificate.modal.src}
+                data-doc-src-back=""
+                data-doc-pdf={kcciCertificate.modal.pdf}
+                data-doc-desc={kcciCertificate.modal.desc}
+              >
+                <img
+                  src={kcciCertificate.img}
+                  alt={kcciCertificate.imgAlt}
+                  className="credential-thumbnail-img"
+                  width="400"
+                  height="560"
+                  loading="lazy"
+                  style={{ maxHeight: '420px', objectFit: 'contain', width: '100%', background: '#f8f9fa' }}
+                />
+                <div className="credential-zoom-overlay">
+                  <i className="bi bi-zoom-in fs-2"></i>
+                  <span className="fw-semibold">Click to Inspect Certificate</span>
                 </div>
-                <div className="credential-card-body">
-                  <div className="credential-issuer">{doc.issuer}</div>
-                  <h3 className="credential-title">{doc.title}</h3>
-                  <p className="credential-desc">{doc.desc}</p>
-                  <div className="d-flex gap-2">
-                    <button type="button" className="btn btn-navy-outline btn-sm flex-grow-1"
-                      data-bs-toggle="modal" data-bs-target="#credentialModal"
-                      data-doc-title={doc.modal.title} data-doc-number={doc.modal.number}
-                      data-doc-src={doc.modal.src} data-doc-src-back={doc.modal.srcBack || ''}
-                      data-doc-pdf={doc.modal.pdf} data-doc-desc={doc.modal.desc}>
-                      <i className="bi bi-eye me-1"></i>Inspect
-                    </button>
-                    <a href={doc.modal.pdf} target="_blank" className="btn btn-outline-secondary btn-sm" title="Download Official PDF">
-                      <i className="bi bi-file-earmark-pdf"></i>
-                    </a>
-                  </div>
+              </div>
+              <div className="credential-card-body p-4 text-start">
+                <div className="credential-issuer text-gold fw-bold text-uppercase small mb-1">
+                  <i className="bi bi-award-fill me-1"></i>{kcciCertificate.issuer}
+                </div>
+                <h3 className="credential-title h5 fw-bold text-navy mb-2">{kcciCertificate.title}</h3>
+                <p className="credential-desc text-muted small mb-3">{kcciCertificate.desc}</p>
+                <div className="d-flex gap-2">
+                  <button
+                    type="button"
+                    className="btn btn-navy flex-grow-1 btn-sm py-2 fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#credentialModal"
+                    data-doc-title={kcciCertificate.modal.title}
+                    data-doc-number={kcciCertificate.modal.number}
+                    data-doc-src={kcciCertificate.modal.src}
+                    data-doc-src-back=""
+                    data-doc-pdf={kcciCertificate.modal.pdf}
+                    data-doc-desc={kcciCertificate.modal.desc}
+                  >
+                    <i className="bi bi-eye me-1"></i>Inspect Full Certificate
+                  </button>
+                  <a
+                    href={kcciCertificate.modal.pdf}
+                    target="_blank"
+                    className="btn btn-outline-gold btn-sm px-3 py-2"
+                    title="Download Official KCCI Certificate PDF"
+                  >
+                    <i className="bi bi-file-earmark-pdf-fill me-1"></i>PDF
+                  </a>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

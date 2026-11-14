@@ -23,7 +23,7 @@ export default function HeroSection() {
           {/* Hero Left Column */}
           <div className="col-lg-7 col-xl-7" data-aos="fade-right" data-aos-duration="800">
             <span className="badge bg-gold-dark text-white px-3 py-2 rounded-pill text-uppercase tracking-wider fw-semibold mb-3 border border-gold hero-trust-tag">
-              <i className="bi bi-patch-check-fill text-gold me-1" aria-hidden="true"></i> Established 2016 &bull; Real Estate &bull; Construction &bull; Investments
+              <i className="bi bi-patch-check-fill text-gold me-1" aria-hidden="true"></i> Official Business Profile &bull; Founder: Zohaib Khan &bull; Est. 2016
             </span>
 
             <h1 className="hero-title mb-3" itemProp="slogan">
@@ -36,10 +36,13 @@ export default function HeroSection() {
 
             <div className="d-flex flex-wrap gap-3 mb-4 hero-cta-group">
               <a href="#projects" className="btn btn-gold btn-lg px-4 py-3 fw-bold" aria-label="View AL-RAHEEM ASSOCIATES construction and real estate projects">
-                <i className="bi bi-grid-fill me-2" aria-hidden="true"></i>View Our Projects
+                <i className="bi bi-grid-fill me-2" aria-hidden="true"></i>View Projects Portfolio
+              </a>
+              <a href="#credentials" className="btn btn-outline-gold btn-lg px-4 py-3 fw-semibold" aria-label="View KCCI Chamber of Commerce Registration Certificate">
+                <i className="bi bi-award-fill me-2" aria-hidden="true"></i>KCCI Certificate
               </a>
               <a href="#contact" className="btn btn-outline-light btn-lg px-4 py-3 fw-semibold" aria-label="Official Contact Information for AL-RAHEEM ASSOCIATES">
-                <i className="bi bi-telephone-outbound-fill me-2" aria-hidden="true"></i>Corporate Office
+                <i className="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>Corporate Office
               </a>
             </div>
 

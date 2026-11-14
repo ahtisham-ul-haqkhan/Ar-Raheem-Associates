@@ -346,8 +346,8 @@ export default function Home() {
         {/* ── SITE VIDEOS & WALKTHROUGHS ──────────── */}
         <VideosSection />
 
-        {/* ── CLIENTS & TESTIMONIALS ──────────────── */}
-        <ClientsSection />
+        {/* ── CLIENTS & TESTIMONIALS (Preserved in codebase, commented out for corporate business profile) ── */}
+        {/* <ClientsSection /> */}
 
         {/* ── COMPANY CREDENTIALS ─────────────────── */}
         <CredentialsSection />
