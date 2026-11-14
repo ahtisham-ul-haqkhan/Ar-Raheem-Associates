@@ -38,8 +38,8 @@ export default function HeroSection() {
               <a href="#projects" className="btn btn-gold btn-lg px-4 py-3 fw-bold" aria-label="View AL-RAHEEM ASSOCIATES construction and real estate projects">
                 <i className="bi bi-grid-fill me-2" aria-hidden="true"></i>View Our Projects
               </a>
-              <a href="#contact" className="btn btn-outline-light btn-lg px-4 py-3 fw-semibold" aria-label="Contact AL-RAHEEM ASSOCIATES for a free quote">
-                <i className="bi bi-telephone-outbound-fill me-2" aria-hidden="true"></i>Contact Us
+              <a href="#contact" className="btn btn-outline-light btn-lg px-4 py-3 fw-semibold" aria-label="Official Contact Information for AL-RAHEEM ASSOCIATES">
+                <i className="bi bi-telephone-outbound-fill me-2" aria-hidden="true"></i>Corporate Office
               </a>
             </div>
 

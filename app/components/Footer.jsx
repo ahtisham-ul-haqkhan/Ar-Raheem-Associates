@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer bg-navy text-white pt-5" aria-label="Corporate Footer">
+    <footer id="contact" className="footer bg-navy text-white pt-5" aria-label="Corporate Footer">
       <div className="container pb-4">
         <div className="row g-4 justify-content-between">
           {/* Col 1: About Firm */}
@@ -68,12 +68,6 @@ export default function Footer() {
             <div className="footer-contact-item">
               <i className="bi bi-clock-fill"></i>
               <div>Mon - Sat: 9:00 AM - 6:00 PM</div>
-            </div>
-
-            <div className="d-flex gap-2 mt-3">
-              <a href="https://facebook.com/alraheemassociates" target="_blank" rel="noopener noreferrer" className="top-social-icon" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
-              <a href="https://instagram.com/alraheemassociates" target="_blank" rel="noopener noreferrer" className="top-social-icon" aria-label="Instagram"><i className="bi bi-instagram"></i></a>
-              <a href="https://linkedin.com/company/alraheemassociates" target="_blank" rel="noopener noreferrer" className="top-social-icon" aria-label="LinkedIn"><i className="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>

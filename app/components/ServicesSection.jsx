@@ -67,11 +67,6 @@ export default function ServicesSection() {
                   <h3 className="service-card-title">{service.title}</h3>
                   <p className="service-card-text">{service.text}</p>
                 </div>
-                <div className="pt-2">
-                  <a href="#contact" className="service-card-link">
-                    Inquire Service <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
               </div>
             </div>
           ))}

@@ -30,8 +30,8 @@ export default function Navbar() {
               <li className="nav-item"><a className="nav-link" href="#why-us">Why Us</a></li>
               <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
               <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-                <a className="btn btn-gold btn-sm px-3 py-2 fw-semibold" href="#contact">
-                  <i className="bi bi-chat-dots-fill me-1"></i> Get a Free Quote
+                <a className="btn btn-gold btn-sm px-3 py-2 fw-semibold" href="#credentials">
+                  <i className="bi bi-patch-check-fill me-1"></i> Corporate Profile
                 </a>
               </li>
             </ul>

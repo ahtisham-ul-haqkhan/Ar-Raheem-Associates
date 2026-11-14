@@ -355,11 +355,11 @@ export default function Home() {
         {/* ── WHY CHOOSE US & HOW WE WORK ─────────── */}
         <WhyUsSection />
 
-        {/* ── CTA BANNER ──────────────────────────── */}
-        <CtaBanner />
+        {/* ── CTA BANNER (Preserved in codebase, commented out for corporate business profile) ── */}
+        {/* <CtaBanner /> */}
 
-        {/* ── CONTACT SECTION ─────────────────────── */}
-        <ContactSection />
+        {/* ── CONTACT FORM SECTION (Preserved in codebase, commented out for corporate business profile) ── */}
+        {/* <ContactSection /> */}
       </main>
 
 

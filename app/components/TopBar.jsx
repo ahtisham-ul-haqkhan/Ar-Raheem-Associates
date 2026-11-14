@@ -16,22 +16,11 @@ export default function TopBar() {
             </span>
           </div>
 
-          {/* Registration & Social links right */}
-          <div className="d-flex align-items-center gap-3">
-            <span className="badge bg-gold-subtle text-gold border border-gold-subtle px-2 py-1">
+          {/* Registration details right */}
+          <div className="d-flex align-items-center">
+            <span className="badge bg-gold-subtle text-gold border border-gold-subtle px-3 py-1">
               <i className="bi bi-patch-check-fill me-1"></i> M/s Al-Raheem Associates &bull; KCCI: 150586 &bull; NTN: 5357401-7 (ATL)
             </span>
-            <div className="d-flex gap-2 ms-2">
-              <a href="https://facebook.com/alraheemassociates" target="_blank" rel="noopener noreferrer" className="top-social-icon" aria-label="Facebook Page">
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="https://instagram.com/alraheemassociates" target="_blank" rel="noopener noreferrer" className="top-social-icon" aria-label="Instagram Profile">
-                <i className="bi bi-instagram"></i>
-              </a>
-              <a href="https://linkedin.com/company/alraheemassociates" target="_blank" rel="noopener noreferrer" className="top-social-icon" aria-label="LinkedIn Corporate Profile">
-                <i className="bi bi-linkedin"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
