@@ -1663,6 +1663,119 @@ img {
   margin-bottom: 0 !important;
 }
 
+/* Why Us Track & Responsive Grid */
+.why-us-track {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.why-us-track-item {
+  flex: 0 0 auto;
+  width: 33.333333%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .why-us-track-item {
+    width: 50%;
+  }
+}
+
+/* Mobile Why Us & Roadmap: Smooth horizontal swipeable carousel */
+@media (max-width: 767.98px) {
+  .why-us-track {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: -12px;
+    margin-left: -12px;
+    scrollbar-width: thin;
+  }
+
+  .why-us-track::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .why-us-track::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 4px;
+  }
+
+  .why-us-track-item {
+    flex: 0 0 82%;
+    max-width: 310px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    margin-bottom: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .why-us-track-item .why-us-card {
+    padding: 24px 20px !important;
+    height: 100%;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .why-us-track-item .why-icon-box {
+    width: 52px;
+    height: 52px;
+    font-size: 1.45rem;
+    margin-bottom: 14px;
+  }
+
+  .why-us-track-item .why-card-title {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .why-us-track-item .why-card-text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 0;
+  }
+
+  /* Mobile Roadmap Horizontal Swipe */
+  .process-timeline-row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 14px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-right: -12px !important;
+    margin-left: -12px !important;
+    scrollbar-width: thin !important;
+  }
+
+  .process-timeline-row::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .process-timeline-row::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 4px;
+  }
+
+  .process-timeline-row > div {
+    flex: 0 0 82% !important;
+    max-width: 310px !important;
+    scroll-snap-align: center !important;
+    scroll-snap-stop: always !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+}
+
 /* How We Work Process Timeline */
 .process-wrapper,
 .process-timeline-wrapper {
